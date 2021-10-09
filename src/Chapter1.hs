@@ -665,7 +665,7 @@ aren't ready for this boss yet!
 -}
 
 firstDigit :: Int -> Int
-firstDigit n = div (abs n) (10 ^ floor (logBase 10 (fromIntegral (abs n))))
+firstDigit n = if n == 0 then 0 else div (abs n) (10 ^ floor (logBase 10 (fromIntegral (abs n))))
 
 
 {-
