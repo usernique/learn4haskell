@@ -664,7 +664,8 @@ You need to use recursion in this task. Feel free to return to it later, if you
 aren't ready for this boss yet!
 -}
 
-firstDigit n = error "firstDigit: Not implemented!"
+firstDigit :: Int -> Int
+firstDigit n = div n (10 ^ floor (logBase 10 (fromIntegral n)))
 
 
 {-
