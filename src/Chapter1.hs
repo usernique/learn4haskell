@@ -491,7 +491,7 @@ Implement a function that returns the last digit of a given number.
   whether it works for you!
 -}
 lastDigit :: Int -> Int
-lastDigit n = mod abs n 10
+lastDigit n = mod (abs n) 10
 
 
 {- |
@@ -643,7 +643,7 @@ specifying complex expressions.
 -}
 
 sumLast2 :: Int -> Int
-sumLast2 n = div (mod abs n 100) 10 + mod abs n 10
+sumLast2 n = div (mod (abs n) 100) 10 + mod (abs n) 10
 
 
 {- |
@@ -665,7 +665,7 @@ aren't ready for this boss yet!
 -}
 
 firstDigit :: Int -> Int
-firstDigit n = div abs n (10 ^ floor (logBase 10 (fromIntegral abs n)))
+firstDigit n = div (abs n) (10 ^ floor (logBase 10 (fromIntegral (abs n))))
 
 
 {-
