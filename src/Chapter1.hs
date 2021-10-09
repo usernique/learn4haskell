@@ -556,7 +556,7 @@ Casual reminder about adding top-level type signatures for all functions :)
 -}
 
 mid :: Int -> Int -> Int -> Int
-mid x y z = max(min(x, y), min(max(x, y), z))
+mid x y z = max (min x y) (min (max x y) z)
 
 
 {- |
@@ -642,7 +642,8 @@ Try to introduce variables in this task (either with let-in or where) to avoid
 specifying complex expressions.
 -}
 
-sumLast2 n = error "sumLast2: Not implemented!"
+sumLast2 :: Int -> Int
+sumLast2 n = div (mod n 100) 10 + mod n 10
 
 
 {- |
