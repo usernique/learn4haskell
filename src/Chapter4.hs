@@ -114,6 +114,7 @@ As always, try to guess the output first! And don't forget to insert
 the output in here:
 
 >>> :k Char
+Char :: *
 
 >>> :k Bool
 
